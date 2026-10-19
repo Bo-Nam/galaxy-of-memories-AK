@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Memories - 20/10</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- WebGL canvas rendered by Three.js -->
+    <canvas class="webgl"></canvas>
+
+    <!-- Title overlay -->
+    <div class="overlay">
+        <div class="title">
+            <div class="line1">Happy Women's Day 20/10</div>
+        </div>
+    </div>
+
+    <!-- Fullscreen image preview (opened when a memory is clicked) -->
+    <div class="preview" id="preview">
+        <button class="preview-close" id="previewClose" type="button">Close</button>
+        <img class="preview-image" id="previewImage" alt="Memory preview">
+        <div class="preview-title" id="previewTitle"></div>
+    </div>
+
+    <!-- Loading screen with progress bar and rotating quotes -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-panel">
+            <div class="loading-top">
+                <div class="loading-text-wrap">
+                    <h2>20/10 Memory Galaxy</h2>
+                    <p id="loadingSub">Gathering your best moments...</p>
+                </div>
+                <div class="loading-orbit">
+                    <div class="loading-star"></div>
+                </div>
+            </div>
+            <div class="loading-quote" id="loadingQuote">"20/10 này, em xin gửi đến các cô muôn vàn lời chúc tốt đẹp nhất."</div>
+            <div class="loading-bar">
+                <div class="loading-fill" id="loadingFill"></div>
+            </div>
+            <div class="loading-meta">
+                <span id="loadingStep">Preparing sky</span>
+                <span id="loadingPercent">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background music (browsers block autoplay with sound, so index.js starts it on first interaction) -->
+    <audio id="bgMusic" src="audio/music.mp3" loop preload="auto"></audio>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Bật/tắt nhạc" title="Bật/tắt nhạc">
+        <span class="music-icon" id="musicIcon">&#9835;</span>
+    </button>
+
+    <!-- Main application script -->
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+
