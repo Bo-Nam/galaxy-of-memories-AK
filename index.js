@@ -24,10 +24,10 @@ const defaultImageFiles = Array.from(
 
 // Messages shown on the loading screen, switched by loading progress
 const loadingQuotes = [
-  '"8/3 nay, mong em cuoi that xinh nhu mot vi sao."',
+  '"20/10 nay, mong em cuoi that xinh nhu mot vi sao."',
   '"Ngan ha co hang ty vi sao, con anh chi thay em la dep nhat."',
   '"Dang gom tung anh nho de bien thanh mot vu tru de thuong."',
-  '"Gan xong roi, chuc em 8/3 luon ruc ro va binh yen."',
+  '"Gan xong roi, chuc em 20/10 luon ruc ro va binh yen."',
 ];
 
 // ===== Loading screen helpers =====
